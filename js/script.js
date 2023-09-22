@@ -1,3 +1,35 @@
+const INITIAL_GRID_CELLS = 16;
+
+function createGridCells(num) {
+  if (Number(num)) {
+  const gridDiv = document.querySelector("#grid");
+  gridDiv.innerHTML = "";
+    for (let i = 0; i < num; i++) {
+      const lineDiv = document.createElement("div");
+      lineDiv.id = "line-div";
+      gridDiv.appendChild(lineDiv);
+      for (let i = 0; i < num; i++) {
+        const cell = document.createElement("div");
+        cell.id = "cell";
+        lineDiv.appendChild(cell);
+        cell.addEventListener("mouseenter", () => {
+          cell.style.backgroundColor = "black";
+        });
+      }
+    }
+  } else {
+    alert("You must enter a number");
+  }
+}
+
+createGridCells(INITIAL_GRID_CELLS);
+
+const cellsNumBtn = document.querySelector("#cells-num");
+cellsNumBtn.addEventListener("click", () => {
+  let num = prompt("Enter the number of cells you want per side");
+  createGridCells(num);
+});
+
 const githubIcon = document.querySelector(".fa-github");
 
 githubIcon.addEventListener("mouseenter", function () {

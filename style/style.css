@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.squares-num {
+.cells-num {
   font-weight: bold;
   font-size: 1rem;
   border-radius: 5px;
@@ -40,10 +40,12 @@ body {
 }
 
 .grid {
+  display: flex;
+  flex-direction: column;
   width: 80%;
   margin: 20px;
   aspect-ratio: 1 / 1;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 .footer {
@@ -58,4 +60,14 @@ body {
 
 .footer p {
   margin: 0;
+}
+
+#line-div {
+  display: flex;
+  height: 100%;
+}
+
+#cell {
+  background-color: white;
+  width: 100%;
 }
