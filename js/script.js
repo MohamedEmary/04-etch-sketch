@@ -1,9 +1,14 @@
 const INITIAL_GRID_CELLS = 16;
 
+function eraseInk() {
+  const cells = document.querySelectorAll("#cell");
+  cells.forEach((cell) => (cell.style.backgroundColor = "white"));
+}
+
 function createGridCells(num) {
   if (Number(num)) {
-  const gridDiv = document.querySelector("#grid");
-  gridDiv.innerHTML = "";
+    const gridDiv = document.querySelector("#grid");
+    gridDiv.innerHTML = "";
     for (let i = 0; i < num; i++) {
       const lineDiv = document.createElement("div");
       lineDiv.id = "line-div";
@@ -29,6 +34,9 @@ cellsNumBtn.addEventListener("click", () => {
   let num = prompt("Enter the number of cells you want per side");
   createGridCells(num);
 });
+
+const eraseBtn = document.querySelector("#erase");
+eraseBtn.addEventListener("click", eraseInk);
 
 const githubIcon = document.querySelector(".fa-github");
 

@@ -21,12 +21,16 @@ body {
 
 .options {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
-.cells-num {
+.cells-num,
+.erase {
   font-weight: bold;
   font-size: 1rem;
   border-radius: 5px;
+  width: 80%;
+  margin: 15px;
+  background-color: aliceblue;
 }
 
 .main-container {
