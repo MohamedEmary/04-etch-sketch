@@ -1,4 +1,5 @@
 const INITIAL_GRID_CELLS = 16;
+const MAX_CELLS = 100;
 
 function eraseInk() {
   const cells = document.querySelectorAll("#cell");
@@ -7,6 +8,9 @@ function eraseInk() {
 
 function createGridCells(num) {
   if (Number(num)) {
+    if (num > MAX_CELLS) {
+      num = MAX_CELLS;
+    }
     const gridDiv = document.querySelector("#grid");
     gridDiv.innerHTML = "";
     for (let i = 0; i < num; i++) {
@@ -31,7 +35,9 @@ createGridCells(INITIAL_GRID_CELLS);
 
 const cellsNumBtn = document.querySelector("#cells-num");
 cellsNumBtn.addEventListener("click", () => {
-  let num = prompt("Enter the number of cells you want per side");
+  let num = prompt(
+    "Enter the number of cells you want per side (Maximum = 100):"
+  );
   createGridCells(num);
 });
 
