@@ -2,7 +2,7 @@ const INITIAL_GRID_CELLS = 16;
 const MAX_CELLS = 100;
 
 function eraseInk() {
-  const cells = document.querySelectorAll("#cell");
+  const cells = document.querySelectorAll(".cell");
   cells.forEach((cell) => (cell.style.backgroundColor = "white"));
 }
 
@@ -15,11 +15,11 @@ function createGridCells(num) {
     gridDiv.innerHTML = "";
     for (let i = 0; i < num; i++) {
       const lineDiv = document.createElement("div");
-      lineDiv.id = "line-div";
+      lineDiv.className = "line-div";
       gridDiv.appendChild(lineDiv);
       for (let i = 0; i < num; i++) {
         const cell = document.createElement("div");
-        cell.id = "cell";
+        cell.className = "cell";
         lineDiv.appendChild(cell);
         cell.addEventListener("mouseenter", () => {
           cell.style.backgroundColor = "black";

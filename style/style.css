@@ -68,12 +68,12 @@ body {
   margin: 0;
 }
 
-#line-div {
+.line-div {
   display: flex;
   height: 100%;
 }
 
-#cell {
+.cell {
   background-color: white;
   width: 100%;
 }
