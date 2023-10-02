@@ -2,7 +2,7 @@
 title: \huge Etch a Sketch
 ---
 
-> **This file is written in [pandoc flavored markdown](https://pandoc.org/MANUAL.html) so it may not look great on GitHub. It's better to take a look at the generated PDF [here](notes.pdf) or the GitHub flavored markdown file [here](notes.md).**
+> **This file is written in [pandoc flavored markdown](https://pandoc.org/MANUAL.html) so it may not look great on GitHub. It's better to take a look at the generated PDF [here](notes.pdf) or the GitHub flavored markdown file [here](README.md).**
 
 # 04-etch-sketch
 
