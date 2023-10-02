@@ -1,5 +1,6 @@
 # 04-etch-sketch
 
+![Website UI](readme_images/ui.png)
 A website that allows you to create and erase sketches on a grid using your mouse, presented as a project within The Odin Project web development curriculum.
 
 In this website, I will apply what I have learned in DOM manipulation with JavaScript from [The Odin Project](https://www.theodinproject.com/) curriculum.
